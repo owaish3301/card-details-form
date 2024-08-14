@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interative-card-details-form-fHSFHi_I-y](https://www.frontendmentor.io/solutions/interative-card-details-form-fHSFHi_I-y)
+- Live Site URL: [https://card-details-form1.netlify.app/](https://card-details-form1.netlify.app/)
 
 ## My process
 
