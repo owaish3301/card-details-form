@@ -39,11 +39,11 @@ const editHolderName = () => {
         isWarnVisibleObj["holderName"] = false;
     }
 
-
-    if(nameOnCard.innerText === ""){
-        nameOnCard.innerText = "Jane Appleseed";
-    }  
-    nameOnCard.innerText = cardHolderName.value 
+    if(cardHolderName.value === ""){
+        nameOnCard.innerHTML = "Jane Appleseed";
+        return;
+    }
+    nameOnCard.innerText = cardHolderName.value;
 }
 
 
@@ -175,7 +175,7 @@ const editExpMonth = () => {
         }
         isWarnVisibleObj["MM"] = false;
     }
-    id = "#warn-error-format-exp";
+    const id = "#warn-error-format-exp";
     warning(expMonth, id);
 
     if(expMonth.value.length > 2) {
@@ -208,7 +208,7 @@ const editExpYear = () => {
         expYear.value = expYear.value.slice(0,2);
     }
 
-    id = "#warn-error-format-exp"
+    const id = "#warn-error-format-exp"
     warning(expYear, id)
 
     expYearOnCard.innerText = expYear.value;
@@ -221,7 +221,7 @@ const editCvc = () => {
         isWarnVisibleObj["CVC"] = false;
     }
 
-    id = "#warn-error-format-cvc";
+    const id = "#warn-error-format-cvc";
     warning(cvc,id)
 
     if (cvc.value.length > 3){
