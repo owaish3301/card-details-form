@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    font-size: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container{
+    display: grid;
+    grid-template-areas:
+    'c a a a a a a a'
+    'b b b b b b b d'
+    ;
+}
+
+.front-card-container{
+    grid-area: b;
+}
+.back-card-container{
+    grid-area: a;
+}
+
+.space-grotesk-font{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.confirm-btn button, .continue-btn{
+    background-color: hsl(278, 68%, 11%);
+}
+
+.focus-state {
+    transition: border 0.3s ease;
+}
+.focus-state:focus {
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right, hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    outline: none;
+}
+
+.red-border{
+    transition: border 0.3s ease;
+    border: 2px solid red;
+    outline: none;
+}
+
+
+@media(min-width:768px){
+    .card-container{
+        grid-template-areas: 
+        'a a a a a a a c'
+        'd b b b b b b b';
+    }
+    .front-card-container{
+        grid-area: a;
+    }
+    .back-card-container{
+        grid-area: b;
+    }
+}
